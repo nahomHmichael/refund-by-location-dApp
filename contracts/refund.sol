@@ -23,3 +23,14 @@ contract refunderContract{
      
     }
     mapping(address => contract_spec) public contractInfo;
+    
+ function kill() public {
+      if(msg.sender == owner) selfdestruct(payable(owner));
+    }
+
+    function check_existance(address employee) private view returns(bool){
+        for(uint256 i = 0; i < employees.length; i++){
+            if(employees[i] == employee) return true;
+        }
+        return false;
+    }
