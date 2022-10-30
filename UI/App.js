@@ -10,8 +10,8 @@ import Welcome from "./screens/Welcome";
 import RootStack from "./navigators/RootStack";
 
 export default function App() {
-	// return <Welcome />;
-	// return <Login />;
+	return <Welcome />;
+	return <Login />;
 	return <RootStack />;
 }
 
