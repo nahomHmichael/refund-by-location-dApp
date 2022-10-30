@@ -22,4 +22,4 @@ contract refunderContract{
         bool status;
      
     }
-  
+    mapping(address => contract_spec) public contractInfo;
