@@ -79,7 +79,7 @@ contract refunderContract{
         require(sent, "Failed to send Ether");
         contractInfo[_to].status=false;
     }
-}
+
   function getBalance () public view returns (uint) {
         return address(this).balance;
     }
