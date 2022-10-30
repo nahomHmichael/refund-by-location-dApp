@@ -80,3 +80,8 @@ contract refunderContract{
         contractInfo[_to].status=false;
     }
 }
+  function getBalance () public view returns (uint) {
+        return address(this).balance;
+    }
+
+}
